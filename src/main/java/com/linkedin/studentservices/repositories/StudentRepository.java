@@ -10,4 +10,5 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 
     @Query("select avg (grade) from Student where active=true")
     Double getAvgGradeForActiveStudents();
+
 }
